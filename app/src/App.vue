@@ -1,9 +1,15 @@
 <template>
   <div>
-    <RouterView />
+<RouterView />
   </div>
 </template>
 
-<script setup></script>
+<script>
+  export default {
+    
+  }
+</script>
 
-<style scoped></style>
+<style  scoped>
+
+</style>
