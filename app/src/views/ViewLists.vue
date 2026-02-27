@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <AnimalCard v-for="animal in animals" :key="animal.name" :animal="animal">{{
-      animal.name
-    }}</AnimalCard>
+    <AnimalCard v-for="animal in animals" :key="animal.name" :animal="animal">
+      <button @click=""addToPizza(animal)> CLICK ME   </button>
+    </AnimalCard>
 
     <AnimalCard :animal="jean"> </AnimalCard>
   </div>
@@ -10,6 +10,9 @@
 
 <script setup>
 import { ref } from 'vue'
+function addToPizza(animal){
+  console.log(animal)
+}
 import AnimalCard from '@/components/AnimalCard.vue'
 const animals = ref([
   { name: 'Leo', species: 'Lion', weight: 420 },
