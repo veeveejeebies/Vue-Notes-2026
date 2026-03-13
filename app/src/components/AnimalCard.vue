@@ -2,6 +2,8 @@
   <div>
     <h2>{{ animal.name }}</h2>
     <h3>{{ animal.species }}</h3>
+    <img :src="animal.img" alt="" />
+    <slot></slot>
   </div>
 </template>
 
